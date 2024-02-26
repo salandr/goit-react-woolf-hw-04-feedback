@@ -7,6 +7,6 @@ function Button({ children, handleClick }) {
 export default Button;
 
 Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
 };

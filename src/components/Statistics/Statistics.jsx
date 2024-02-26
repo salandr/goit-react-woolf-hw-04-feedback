@@ -15,12 +15,9 @@ function Statistics({ good, neutral, bad, total, positiveFeedback }) {
 export default Statistics;
 
 Statistics.propTypes = {
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      option: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
-    })
-  ).isRequired,
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.string.isRequired,
+  positiveFeedback: PropTypes.number.isRequired,
 };
